@@ -17,12 +17,12 @@ const PROFILE = {
   location: "Cairo, Egypt",
   bio:
     "Engineer building high‑performance systems (C++/Python), ML‑driven schedulers, and elegant developer tooling. I care about reliability, DX, and delightful UX.",
-  resumeUrl: "#", // replace with a real link (e.g., /Omar-Resume.pdf)
-  email: "omar@example.com", // used in the contact button
+  resumeUrl: "/Omar-Resume.pdf", // update with your actual resume file if available
+  email: "omarsamiiii@gmail.com", // your real email
   socials: [
-    { label: "GitHub", href: "https://github.com/your-username", icon: Github },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/your-handle/", icon: Linkedin },
-    { label: "Email", href: "mailto:omar@example.com", icon: Mail },
+    { label: "GitHub", href: "https://github.com/omarsamiiii", icon: Github },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/omarsamiiii/", icon: Linkedin },
+    { label: "Email", href: "mailto:omarsamiiii@gmail.com", icon: Mail },
   ],
 };
 
@@ -49,7 +49,7 @@ const PROJECTS = [
       "ML pipeline predicting duration & memory of RTL simulations to optimize grid scheduling. Features advanced feature engineering, model tracking, and evaluation dashboards.",
     tags: ["Python", "XGBoost", "PostgreSQL", "MLflow"],
     links: [
-      { label: "Repo", href: "https://github.com/your-username/schedule-predictor" },
+      { label: "Repo", href: "https://github.com/omarsamiiii/schedule-predictor" },
       { label: "Docs", href: "https://your-site.dev/schedule-predictor" },
     ],
   },
@@ -59,7 +59,7 @@ const PROJECTS = [
       "Modern C++ rewrite of a legacy Tcl run manager: dependency graph, smart‑pointer architecture, robust logging, and cross‑platform process orchestration.",
     tags: ["C++", "Tcl", "Systems", "Concurrency"],
     links: [
-      { label: "Repo", href: "https://github.com/your-username/vrun-cpp" },
+      { label: "Repo", href: "https://github.com/omarsamiiii/vrun-cpp" },
     ],
   },
   {
@@ -68,8 +68,8 @@ const PROJECTS = [
       "Design micro‑site showcasing moodboards and project case studies. Clean UI, accessible components, and CMS‑driven content.",
     tags: ["React", "Tailwind", "Content"],
     links: [
-      { label: "Live", href: "https://your-username.github.io/hobby-home" },
-      { label: "Repo", href: "https://github.com/your-username/hobby-home" },
+      { label: "Live", href: "https://omarsamiiii.github.io/hobby-home" },
+      { label: "Repo", href: "https://github.com/omarsamiiii/hobby-home" },
     ],
   },
 ];
