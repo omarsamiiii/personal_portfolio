@@ -78,7 +78,7 @@ const CONTACT_NOTE =
   "Looking for collaborations, freelance systems work, or ML consulting. ";
 
 // ---- Helpers ----
-const Section = ({ id, title, children }: { id: string; title: string; children: React.ReactNode }) => (
+const Section = ({ id, title, children }) => (
   <section id={id} className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <motion.h2
       initial={{ opacity: 0, y: 12 }}
@@ -93,7 +93,7 @@ const Section = ({ id, title, children }: { id: string; title: string; children:
   </section>
 );
 
-const Tag = ({ children }: { children: React.ReactNode }) => (
+const Tag = ({ children }) => (
   <span className="inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium opacity-90">
     {children}
   </span>
@@ -119,7 +119,7 @@ function useDarkMode() {
     }
   }, [dark]);
 
-  return { dark, setDark } as const;
+  return { dark, setDark };
 }
 
 const Header = () => {
@@ -329,7 +329,7 @@ const Contact = () => (
         transition={{ duration: 0.35, delay: 0.05 }}
         onSubmit={(e) => {
           e.preventDefault();
-          const form = e.currentTarget as HTMLFormElement;
+          const form = e.currentTarget;
           const data = new FormData(form);
           const subject = encodeURIComponent(`Portfolio Inquiry from ${data.get("name")}`);
           const body = encodeURIComponent(`${data.get("message")}\n\n— ${data.get("name")} (${data.get("email")})`);
@@ -379,7 +379,7 @@ const Footer = () => (
   </footer>
 );
 
-export default function Portfolio() {
+export default function App() {
   // Subtle page reveal
   const reveal = useMemo(() => ({ initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.25 } }), []);
 
